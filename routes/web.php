@@ -1,9 +1,18 @@
 <?php
 
+use Illuminate\Auth\Events\Login;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-use Illuminate\Auth\Events\Login;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProdukController;
+use App\Models\Parfum;
+
+// ############ Bagian Crud ######################
+use App\Http\Controllers\ParfumController;
+use App\Http\Controllers\DashboardParfumController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,24 +36,6 @@ Route::get('/produk', function () {
     ]);
 });
 
-Route::get('/produk', function () {
-    return view('produk', [
-        "title" => "produk"
-    ]);
-});
-
-Route::get('/login', function () {
-    return view('login', [
-        "title" => "login"
-    ]);
-});
-
-Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
-Route::post('/register', [RegisterController::class, 'register']);
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login'); // Ganti dengan metode yang sesuai untuk menampilkan halaman login
-Route::post('/login', [LoginController::class, 'login']); // Ganti dengan metode yang sesuai untuk proses login
-
-
 //about
 Route::get('/about', function () {
     return view('about', [
@@ -52,21 +43,33 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('layout');
 });
 
-Route::get('/produk', function () {
-    return view('produk');
-});
+Route::get('/produk', [ParfumController::class, 'index']);
+
 
 Route::get('/about', function () {
     return view('about');
 });
 
-// User routes
-Route::middleware(['auth'])->group(function () {
-    Route::get('/profile', [UserController::class, 'profile'])->name('user.profile');
-    Route::get('/settings', [UserController::class, 'settings'])->name('user.settings');
-    Route::get('/logout', [UserController::class, 'logout'])->name('user.logout');
-});
+
+// #############################################################
+// ####### BAGIAN ADMIN #####
+// <<<<<<<<<< Route Login User >>>>>>>>>
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+})->middleware('auth');
+
+// <<<<<<< Dashboard Parfum >>>>>>>>>>>
+Route::get('/dashboard/parfums/checkSlug', [DashboardParfumController::class, 'checkSlug'])
+    ->middleware('auth');
+Route::resource('/dashboard/parfums', DashboardParfumController::class)->middleware('auth');
+
+// <<<<<<< Route Untuk Register >>>>>>>>>>>
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);

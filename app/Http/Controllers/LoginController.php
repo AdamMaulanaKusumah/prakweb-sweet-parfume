@@ -3,78 +3,41 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class LoginController extends Controller
 {
-    /**
-     * Menampilkan halaman login.
-     *
-     * @return \Illuminate\View\View
-     */
-    public function showLoginForm()
+    public function index()
     {
-        return view('auth.login');
+        return view('login.index', [
+            'title' => 'Login',
+            'active' => 'login'
+        ]);
     }
 
-    /**
-     * Menangani proses login.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function login(Request $request)
+    public function authenticate(Request $request)
     {
-        // Lakukan validasi input
-        $request->validate([
+        $credentials = $request->validate([
             'email' => 'required|email',
-            'password' => 'required',
-
-
+            'password' => 'required'
         ]);
 
-        // Lakukan pengecekan manual, misalnya menggunakan model User
-        if ($this->authenticate($request->input('email'), $request->input('password'))) {
-            // Jika autentikasi berhasil, Anda dapat mengatur sesi atau tindakan lainnya
+        if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-
             return redirect()->intended('/dashboard');
         }
 
-        // Jika autentikasi gagal, kembalikan dengan pesan error
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ]);
+        return back()->with('loginError', 'Login Failed!');
     }
 
-    /**
-     * Fungsi untuk melakukan otentikasi manual.
-     *
-     * @param string $email
-     * @param string $password
-     * @return bool
-     */
-    private function authenticate($email, $password)
+    public function logout()
     {
-        // Lakukan pengecekan manual, misalnya menggunakan model User
-        // Gantilah dengan logika autentikasi yang sesuai dengan kebutuhan aplikasi Anda
-        // Contoh sederhana:
-        // $user = User::where('email', $email)->first();
-        // return $user && Hash::check($password, $user->password);
+        Auth::logout();
 
-        // Di sini, contoh sederhana selalu mengembalikan true untuk tujuan demonstrasi
-        return true;
-    }
+        request()->session()->invalidate();
 
-    /**
-     * Menangani proses logout.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function logout(Request $request)
-    {
-        // Lakukan logika logout sesuai kebutuhan aplikasi Anda
-        // Misalnya, kosongkan sesi atau lakukan tindakan logout yang diperlukan
+        request()->session()->regenerateTOken();
 
         return redirect('/');
     }

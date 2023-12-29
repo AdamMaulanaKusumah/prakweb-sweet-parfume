@@ -46,11 +46,11 @@
         Alpine.data('slider', () => ({
             currentIndex: 1,
             images: [
-                'https://source.unsplash.com/random/250%C3%97250/?parfume',
+                'https://source.unsplash.com/random/250%C3%9725/?parfume',
                 'https://source.unsplash.com/1600x900/?parfume',
                 'https://source.unsplash.com/random/250%C3%97250/?parfume',
-                'https://source.unsplash.com/1600x900/?parfume',
-                'https://source.unsplash.com/random/250%C3%97250/?parfume'
+                'https://source.unsplash.com/1603x900/?parfume',
+                'https://source.unsplash.com/random/250%C3%9720/?parfume'
             ],
             back() {
                 if (this.currentIndex > 1) {
@@ -68,7 +68,7 @@
     })
 </script>
 
-<h2 class=" text-2xl font-bold text-gray-900 text-center mb-3">THE ICONS</h2>
+<h2 class=" text-2xl font-bold text-gray-900 text-center mb-7 mt-10">THE ICONS</h2>
 
 
 
@@ -80,8 +80,7 @@
         </a>
 			<div class="px-5 pb-5">
 				<a href="#">
-					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Apple Watch Series 7
-						GPS, Aluminium Case, Starlight Sport</h3>
+					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">OPIUM BLACK - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
 				</a>
 				<div class="flex items-center mt-2.5 mb-5">
 					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
@@ -118,7 +117,7 @@
 				</div>
 				<div class="flex items-center justify-between">
 					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
+					<a href="/login"
 						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 						to cart</a>
 				</div>
@@ -131,8 +130,7 @@
         </a>
 			<div class="px-3 pb-3">
 				<a href="#">
-					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Apple Watch Series 7
-						GPS, Aluminium Case, Starlight Sport</h3>
+					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">OPIUM BLACK - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
 				</a>
 				<div class="flex items-center mt-2.5 mb-5">
 					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
@@ -169,7 +167,7 @@
 				</div>
 				<div class="flex items-center justify-between">
 					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
+					<a href="/login"
 						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 						to cart</a>
 				</div>
@@ -182,8 +180,7 @@
         </a>
 			<div class="px-3 pb-3">
 				<a href="#">
-					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Apple Watch Series 7
-						GPS, Aluminium Case, Starlight Sport</h3>
+					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">OPIUM BLACK - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
 				</a>
 				<div class="flex items-center mt-2.5 mb-5">
 					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
@@ -220,7 +217,7 @@
 				</div>
 				<div class="flex items-center justify-between">
 					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
+					<a href="login"
 						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 						to cart</a>
 				</div>
@@ -234,8 +231,7 @@
         </a>
 			<div class="px-5 pb-5">
 				<a href="#">
-					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Apple Watch Series 7
-						GPS, Aluminium Case, Starlight Sport</h3>
+					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">OPIUM BLACK - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
 				</a>
 				<div class="flex items-center mt-2.5 mb-5">
 					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
@@ -272,7 +268,7 @@
 				</div>
 				<div class="flex items-center justify-between">
 					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
+					<a href="/login"
 						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 						to cart</a>
 				</div>
@@ -289,8 +285,7 @@
         </a>
 			<div class="px-5 pb-5">
 				<a href="#">
-					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Apple Watch Series 7
-						GPS, Aluminium Case, Starlight Sport</h3>
+					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">OPIUM BLACK - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
 				</a>
 				<div class="flex items-center mt-2.5 mb-5">
 					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
@@ -327,7 +322,7 @@
 				</div>
 				<div class="flex items-center justify-between">
 					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
+					<a href="/login"
 						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 						to cart</a>
 				</div>
@@ -340,8 +335,7 @@
         </a>
 			<div class="px-3 pb-3">
 				<a href="#">
-					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Apple Watch Series 7
-						GPS, Aluminium Case, Starlight Sport</h3>
+					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">OPIUM BLACK - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
 				</a>
 				<div class="flex items-center mt-2.5 mb-5">
 					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
@@ -378,7 +372,7 @@
 				</div>
 				<div class="flex items-center justify-between">
 					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
+					<a href="/login"
 						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 						to cart</a>
 				</div>
@@ -429,7 +423,7 @@
 				</div>
 				<div class="flex items-center justify-between">
 					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
+					<a href="/login"
 						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 						to cart</a>
 				</div>
@@ -443,8 +437,7 @@
         </a>
 			<div class="px-5 pb-5">
 				<a href="#">
-					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Apple Watch Series 7
-						GPS, Aluminium Case, Starlight Sport</h3>
+					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">OPIUM BLACK - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
 				</a>
 				<div class="flex items-center mt-2.5 mb-5">
 					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
@@ -481,7 +474,7 @@
 				</div>
 				<div class="flex items-center justify-between">
 					<span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-					<a href="#"
+					<a href="/login"
 						class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
 						to cart</a>
 				</div>

@@ -1,30 +1,51 @@
-  @extends('layouts.log')
+@extends('layouts.mains')
 
-  @section('container')
-
-  <form class="max-w-sm mx-auto mb-9 mt-9    items-center justify-center">
-    <div class="mb-5">
-      <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
-      <input type="nama" id="nama" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Nama" required>
+@section('container')
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <main class="form-registration w-100 m-auto">
+                <h1 class="h3 mb-3 fw-normal text-center">Registration Form</h1>
+                <form action="/register" method="post">
+                    @csrf
+                    <div class="form-floating">
+                        <input type="text" name="name"
+                            class="form-control rounded-top @error('name')is-invalid @enderror" id="name"
+                            placeholder="Name"required value="{{ old('name') }}">
+                        <label for="name">Name</label>
+                        @error('name')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" name="username" class="form-control @error('username')is-invalid @enderror"
+                            id="username" placeholder="Username" required value="{{ old('username') }}">
+                        <label for="username">Username</label>
+                        @error('username')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
+                            id="email" placeholder="name@example.com" required value="{{ old('email') }}">
+                        <label for="email">Email address</label>
+                        @error('email')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" name="password"
+                            class="form-control rounded-bottom @error('password')is-invalid @enderror" id="password"
+                            placeholder="Password" required>
+                        <label for="password">Password</label>
+                        @error('password')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <button class="w-100 btn-lg  btn bg-dark btn-dark text-white mt-3" type="submit">Register</button>
+                    <small class="d-block text-center mt-3">Already Registered? <a href="/login">Login</a></small>
+                </form>
+                <button class="w-20 btn-sm  btn bg-dark btn-dark text-white mt-3" type="submit"><a href="/">Kembali</a></button>
+            </main> 
+        </div>
     </div>
-    <div class="mb-5">
-      <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama lengkap</label>
-      <input type="nama" id="nama" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Nama Lengkap" required>
-    </div>
-    <div class="mb-5">
-      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-      <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="@Email" required>
-    </div>
-    <div class="mb-5">
-      <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-      <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
-    </div>
-    <div class="mb-5">
-      <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
-      <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required>
-    </div>
-    <div class="flex items-start mb-5">
-    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
-  </form>
-
-  @endsection
+@endsection

@@ -4,35 +4,34 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use Illuminate\Support\Facades\Auth; // Import the Auth facade
+use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
-    public function showRegistrationForm()
+    public function index()
     {
-        return view('auth.register');
+        return view('register.index', [
+            'title' => 'Register',
+            'active' => 'register'
+        ]);
     }
 
-    public function register(Request $request)
+    public function store(Request $request)
     {
-        $request->validate([
-            'nama' => 'required|string|max:255',
-            'nama_lengkap' => 'required|string|max:255',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+        $validateData =  $request->validate([
+            'name' => 'required|max:225',
+            'username' => ['required', 'min:3', 'max:225', 'unique:users'],
+            'email' => 'required|email:dns|unique:users',
+            'password' => 'required|min:5|max:225'
         ]);
 
-        $user = User::create([
-            'name' => $request->input('nama'),
-            'nama_lengkap' => $request->input('nama_lengkap'),
-            'email' => $request->input('email'),
-            'password' => bcrypt($request->input('password')),
-        ]);
+        // $validateData['password'] = bcrypt($validateData['password']);
+        $validateData['password'] = Hash::make($validateData['password']);
 
-        // Log in the user after registration
-        Auth::login($user);
+        User::create($validateData);
+        // $request->session()->flash('success', 'Registration successfull! Please Login');
 
-        // Redirect to the login page with a success message
-        return redirect()->route('login')->with('success', 'Registration successful! You are now logged in.');
+
+        return redirect('/login')->with('success', 'Registration successfull! Please Login');
     }
 }
