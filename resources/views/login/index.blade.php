@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Vanila Css -->
     @vite('resources/css/app.css')
-    <title>Synchronize</title>
+    <title>Sweet's Parfum</title>
     <!-- AOS css animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="/img/png"href="/img/2.jpeg">
@@ -60,7 +60,7 @@
     </header>
     <!-- header navbar end -->
 
-    <section id="home" class=" pb-28 lg:pb-6 bg-amber-400">
+    <section id="home" class=" pb-28 lg:pb-6 bg-amber-400 ">
         <div class="flex flex-col justify-center">
             <h2 class="text-black text-center mx-auto font-bold mb-6 md:text-3xl lg:text-xl"></h2>
             @if (session()->has('success'))
@@ -96,7 +96,7 @@
                             <label for="" class="text-white">show password</label>
                         </div>
                         <div class="mt-2">
-                            <small class=" text-left mr-20 mt-2 text-white">sudah punya akun?<a href="/register" class="hover:text-blue-600">Register</a></small>
+                            <small class=" text-left mr-20 mt-2 text-white">Belum punya akun?<a href="/register" class="hover:text-blue-600">Register</a></small>
                         </div>
                     <button class="text-white w-full my-5 py-2 font-semibold rounded-lg bg-amber-600 hover:shadow-lg hover:shadow-amber-600/50 ease-in-out duration-300">Sign In</button>
                     </div>
@@ -108,7 +108,7 @@
 
     <!-- Section Footer  -->
     <footer class="bg-black text-white text-xs sm:text-base text-center pt-4 pb-4 font-mono">
-		© Copyright 2023 - <span class="text-yellow-300">PT ISAL MANCITY</span>
+		© Copyright 2023 - <span class="text-yellow-300">PT Sweet's Parfum</span>
 	</footer>
 
     <script>

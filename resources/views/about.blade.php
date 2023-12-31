@@ -18,75 +18,71 @@ Dalam hal harga kami tentu menjadi Benchmark dari toko online parfum yang lain, 
 
       </dl>
     </div>
-    <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 block">
+    <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 block mb-4">
       <a href="/public">
-      <img src="/img/sweets.png" alt="Top down view of walnut card tray with embedded magnets and card groove." class="rounded-lg ">
+      <img src="/img/sweets.png" alt="Top down view of walnut card tray with embedded magnets and card groove." class="rounded-lg mb-4">
       </a>
       <a href="/public">
-      <img src="/img/Netstars.png" alt="Walnut card tray filled with cards and card angled in dedicated groove." class="rounded-lg ">
+      <img src="/img/Netstars.png" alt="." class="rounded-lg mb-4">
       </a>
     </div>
   </div>
   
 
-<div class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-15 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-    <figure class="flex flex-col items-center justify-center p-8 text-center  border-b border-gray-100 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-100">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">213040086</h3>
-        </blockquote>
-        <figcaption class="flex items-center justify-center ">
-          <a  href="/public"></a>
-            <img class="grid items-center w-10 h-15 flex" src="/img/maulana.jpeg-min.jpeg" alt="profile picture">
+  <div class="flex justify-center gap-4 mt-10 mb-20">
+      <div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img src="">
+            <img class="rounded-t-lg p-8 " src="https://source.unsplash.com/random/250%C3%97250/?parfume" alt="product image">
+        </a>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h3 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Adam Maulana Kusumah</h3>
+              <h5 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Front End Developer</h5>
             </a>
-            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Adam Maulana Kusumah</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400 ">Front End Developer</div>
-            </div>
-        </figcaption>    
-    </figure>
-    <figure class="flex flex-col items-center justify-center p-8 text-center  border-b border-gray-100 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
-            <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center ">
-          <a href="/public">
-            <img class="rounded-full w-10 h-10" src="/img/Nizarr.JPG" alt="profile picture">
+           
+          </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img src="">
+            <img class="rounded-t-lg p-8" src="https://source.unsplash.com/random/250%C3%97250/?parfume" alt="product image">
+        </a>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h3 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Moch Nizar Alfattan</h3>
+              <h5 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Front End Developer</h5>
             </a>
-            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Moch. Nizar Alfattan</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400">Front End Developer</div>
-            </div>
-        </figcaption>    
-    </figure>
-    <figure class="flex flex-col items-center justify-center p-8 text-center  border-b border-gray-100 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
-            <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture">
-            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Jese Leos</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
-            </div>
-        </figcaption>    
-    </figure>
-    <figure class="flex flex-col items-center justify-center p-8 text-center bg-bg-gray-100 border-gray-100 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
-            <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
-            <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Joseph McFall</div>
-                <div class="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
-            </div>
-        </figcaption>    
-    </figure>
-</div>
-</div>
+          </div>
+      </div>  
+  
+    <div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img class="rounded-t-lg p-8  " src="https://source.unsplash.com/random/250%C3%97250/?parfume" alt="product image">
+          </a>
+        <div class="px-3 pb-3">
+          <a href="#">
+            <h3 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Yogi Saputra</h3>
+            <h5 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Back End Developer</h5>
+          </a>
+        </div>
+    </div>
+  
+    
+  
+    <div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 ">
+      <a href="#">
+        <img class="rounded-t-lg p-8 " src="https://source.unsplash.com/random/250%C3%97250/?parfume" alt="product image">
+          </a>
+        <div class="px-5 pb-5">
+          <a href="#">
+            <h3 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Adan Ahmad Erlangga</h3>
+            <h5 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Back End Developer</h5>
+          </a>
+        </div>
+    </div>
+  </div>
+  </div>
 
 
 <h2 class="flex items-center justify-center mb-5 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Alamat Toko</h2>

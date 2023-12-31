@@ -22,7 +22,7 @@ body {
   left: 0;
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  box-shadow: inset -1px 0 0 rgba(19, 53, 104, 0.1);
 }
 
 @media (max-width: 767.98px) {
@@ -44,11 +44,11 @@ body {
 
 .sidebar .nav-link .feather {
   margin-right: 4px;
-  color: #727272;
+  color: #3d3d3c;
 }
 
 .sidebar .nav-link.active {
-  color: #2470dc;
+  color: #021022;
 }
 
 .sidebar .nav-link:hover .feather,
