@@ -63,7 +63,7 @@ Dalam hal harga kami tentu menjadi Benchmark dari toko online parfum yang lain, 
           </a>
         <div class="px-3 pb-3">
           <a href="#">
-            <h3 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Yogi Saputra</h3>
+            <h3 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Yogi Saputra M</h3>
             <h5 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Back End Developer</h5>
           </a>
         </div>

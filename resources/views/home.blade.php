@@ -436,7 +436,7 @@
         </a>
 			<div class="px-5 pb-5">
 				<a href="#">
-					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">OPIUM BLACK - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
+					<h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">AXE - Parfum Cewek Cowok Tahan Lama DUPE by Sweet's Parfume</h3>
 				</a>
 				<div class="flex items-center mt-2.5 mb-5">
 					<svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
