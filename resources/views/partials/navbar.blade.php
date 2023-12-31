@@ -38,7 +38,7 @@
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
-      <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium " aria-current="page ">Homed</a>
+      <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium " aria-current="page ">Home</a>
       <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Produk</a>
       <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
     </div>

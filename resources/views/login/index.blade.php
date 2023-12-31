@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Vanila Css -->
     @vite('resources/css/app.css')
-    <title>Synchronize</title>
+    <title>Sweet's Parfum</title>
     <!-- AOS css animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="/img/png"href="/img/2.jpeg">
@@ -108,7 +108,7 @@
 
     <!-- Section Footer  -->
     <footer class="bg-black text-white text-xs sm:text-base text-center pt-4 pb-4 font-mono">
-		© Copyright 2023 - <span class="text-yellow-300">PT ISAL MANCITY</span>
+		© Copyright 2023 - <span class="text-yellow-300">PT Sweet's Parfum</span>
 	</footer>
 
     <script>
