@@ -2,15 +2,15 @@
  @section('container')
 
 
-<div class="row justify-content-center mb-3 mt-3">
-<div class="col-md-6">
-<form action="/produk">
-	<div class="input-group mb-3">
-		<input type="text" class="form-control" placeholder="Search..." name="search">
-		<button class="btn btn-danger" type="submit">Search</button>
-	  </div>
-</form>
-</div>
+ <div class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+        <form action="/produk">
+            <div class="flex items-center border rounded-lg p-2">
+                <input type="text" class="flex-grow px-4 py-2 rounded-l-lg focus:outline-none" placeholder="Search..." name="search">
+                <button class="bg-red-500 hover:bg-red-600 text-black px-4 py-2 rounded-r-lg">Search</button>
+            </div>
+        </form>
+    </div>
 </div>
 
 <!-- Teks Produk -->

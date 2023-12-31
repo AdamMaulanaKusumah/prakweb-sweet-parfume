@@ -7,7 +7,7 @@
 
 
 
-<div class="flex justify-center gap-4  mb-10">
+<div class="flex justify-center gap-4  mb-10 mt-10">
 	@foreach ($parfums as $parfum)
 		<div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
 			<a href="#">

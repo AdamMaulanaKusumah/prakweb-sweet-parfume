@@ -31,7 +31,8 @@
       <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <a href="/register" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-3  text-sm font-medium {{ Request::is('auth/register ') ? 'active' : '' }}">Register</a>
-            <a href="/login" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-3 text-sm font-medium {{ Request::is('auth/login') ? 'active' : '' }}">Login</a>
+            <a href="/login" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-3 text-sm font-medium {{ Request::is('auth/login') ? 'active' : '' }}"><i class="bi bi-box-arrow-in-right"></i>
+              Login</a>
           </div>
         </div>
       </div>
