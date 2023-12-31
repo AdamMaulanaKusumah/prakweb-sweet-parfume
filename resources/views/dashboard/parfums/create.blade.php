@@ -9,7 +9,7 @@
         <form method="post" action="/dashboard/parfums" class="mb-5" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
-                <label for="title" class="form-label"><b>Nama parfum :</b></label>
+                <label for="title" class="form-label"><b>Nama Parfum :</b></label>
                 <input type="text" class="form-control @error('title') is-invalid @enderror" id="title"
                     name="title" required autofocus value="{{ old('title') }}">
                 @error('title')
@@ -18,6 +18,7 @@
                     </div>
                 @enderror
             </div>
+            
 
             <div class="mb-3">
                 <label for="slug" class="form-label"><b>Slug :</b></label>
@@ -43,7 +44,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="body" class="form-label"><b>Deskripsi pelatihan :</b></label>
+                <label for="body" class="form-label"><b>Deskripsi Yang anda beli :</b></label>
                 @error('body')
                     <p class="text-danger">{{ $message }}</p>
                 @enderror
