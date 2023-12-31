@@ -7,6 +7,7 @@
                     Dashboard
                 </a>
             </li>
+            
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('dashboard/homepage') ? 'active' : '' }}" aria-current="page"  href="/">
                     <span data-feather="home" class="align-text-bottom"></span>
