@@ -33,7 +33,10 @@ Dalam hal harga kami tentu menjadi Benchmark dari toko online parfum yang lain, 
       <div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img src="">
-            <img class="rounded-t-lg p-8 " src="https://source.unsplash.com/random/250%C3%97250/?parfume" alt="product image">
+
+            
+          <img class="rounded-t-lg p-8 " src="https://source.unsplash.com/random/250%C3%97250/?parfume" alt="product image">
+
         </a>
           <div class="px-5 pb-5">
             <a href="#">
@@ -62,7 +65,9 @@ Dalam hal harga kami tentu menjadi Benchmark dari toko online parfum yang lain, 
           </a>
         <div class="px-3 pb-3">
           <a href="#">
-            <h3 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Yogi Saputra</h3>
+
+            <h3 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Yogi Saputra M</h3>
+
             <h5 class="text-center text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Back End Developer</h5>
           </a>
         </div>
